@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Discord - 100k Members</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="discord-container">
+    <div class="sidebar">
+      <div class="server-icon">FD</div>
+      <div class="channels" id="channels-list"></div>
+    </div>
+    
+    <div class="main-content">
+      <div class="header">
+        <div class="channel-name">
+          <span>#</span>
+          <span id="channel-name">general</span>
+        </div>
+        <div class="member-count" id="member-count">100,000 Members</div>
+      </div>
+      
+      <div class="chat-container">
+        <div class="messages" id="messages"></div>
+        <div class="message-input-container">
+          <input 
+            type="text" 
+            id="message-input" 
+            placeholder="Message #general" 
+            class="message-input"
+          >
+          <button id="send-button" class="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="member-panel">
+      <div class="member-panel-header">
+        <div class="panel-tabs">
+          <button class="panel-tab active" data-tab="members">Members</button>
+          <button class="panel-tab" data-tab="leaderboard">🏆 Top 100</button>
+          <button class="panel-tab" data-tab="stats">📊 My Stats</button>
+        </div>
+      </div>
+      
+      <div class="panel-content">
+        <div id="members-tab" class="panel-tab-content active">
+          <div class="member-count-small" id="online-count">0 Online</div>
+          <div class="members-list" id="members-list"></div>
+        </div>
+        
+        <div id="leaderboard-tab" class="panel-tab-content">
+          <div class="leaderboard" id="leaderboard"></div>
+        </div>
+        
+        <div id="stats-tab" class="panel-tab-content">
+          <div class="player-stats" id="player-stats">
+            <p>Your stats will appear here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
