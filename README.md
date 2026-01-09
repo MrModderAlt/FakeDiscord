@@ -1,10 +1,10 @@
-# FakeDiscord
-Discord but Something seems off..
+# Fake Discord
+Discord but Something seems off.. and it's not.. discord
 Credits to meee <3
 
 
-# This took me months to do
+# This took me years to do... please support by entering my guns.lol!
 
-guns.lol/mrmodder
+https://guns.lol/mrmodder
 
 ching chp
